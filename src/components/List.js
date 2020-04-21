@@ -78,7 +78,7 @@ const List = () => {
                   <input
                     type='checkbox'
                     className='filled-in'
-                    checked='checked'
+                    defaultChecked='checked'
                     onClick={() => helloWorld(x.id, x.active, x)}
                   />
                   <span id='new2'></span>
