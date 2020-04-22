@@ -213,7 +213,7 @@ img {
   grid-gap: 1rem;
 }
 
-.btn {
+.btns {
   display: inline-block;
   background: var(--light-color);
   color: #333;
@@ -260,6 +260,7 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  font-size: 1.3rem;
 }
 
 .btn-primary,
@@ -311,8 +312,9 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn:active {
+  opacity: 0.7;
+  background-color: #2bbbad;
 }
 
 .bg-light,

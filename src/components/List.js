@@ -8,11 +8,10 @@ const List = () => {
   const { deleteItem, list, showItem, saveItem, editLoad } = warehouseContext;
 
   const helloWorld = (id, active, values) => {
-    const item = values;
-    active ? (item.active = false) : (item.active = true);
+    active ? (values.active = false) : (values.active = true);
 
     // eslint-disable-next-line
-    return deleteItem(id), saveItem(item), editLoad();
+    return deleteItem(id), saveItem(values), editLoad();
   };
 
   return (

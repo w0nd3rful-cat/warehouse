@@ -104,7 +104,7 @@ const New = () => {
           </label>
         </div>
 
-        <input type='submit' value='Save' className='btn btn-dark' />
+        <input type='submit' value='Save' className='btn' />
       </form>
     </div>
   );

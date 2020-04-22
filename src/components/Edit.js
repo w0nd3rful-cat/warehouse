@@ -5,9 +5,9 @@ import WarehouseContext from '../context/warehouse/warehouseContext';
 const ProductEdit = () => {
   const warehouseContext = useContext(WarehouseContext);
 
-  const [values, setValues] = useState(warehouseContext.item);
+  const { deleteItem, saveItem, editLoad, showAlert, item } = warehouseContext;
 
-  const { deleteItem, saveItem, editLoad, showAlert } = warehouseContext;
+  const [values, setValues] = useState(item);
 
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -93,7 +93,7 @@ const ProductEdit = () => {
             ></input>
           </label>
         </div>
-        <input type='submit' value='Save' className=' btn btn-dark' />
+        <input type='submit' value='Save' className=' btn ' />
       </form>
     </div>
   );
